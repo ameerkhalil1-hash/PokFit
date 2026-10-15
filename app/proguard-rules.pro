@@ -1,0 +1,4 @@
+-keep class com.pokopia.macros.network.** { *; }
+-keep class com.pokopia.macros.data.local.** { *; }
+-keepattributes *Annotation*,Signature,InnerClasses,EnclosingMethod
+-dontwarn javax.annotation.**
