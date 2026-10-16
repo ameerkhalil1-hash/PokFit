@@ -490,7 +490,7 @@ class PokopiaViewModel @Inject constructor(
                 )
             }
             soundEngine.playDittoIslandMarimbaArpeggio()
-            _statusBanner.value = "Porygon NLP parsed ${parsedItems.size} food items from "$utterance"!"
+            _statusBanner.value = "Porygon NLP parsed ${parsedItems.size} food items from \"$utterance\"!"
             PokopiaGlanceWidgetUpdater.requestImmediateUpdate(appContext)
             updateDittoGoalState()
         }

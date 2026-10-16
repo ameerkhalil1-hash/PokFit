@@ -58,7 +58,6 @@ class MainActivity : ComponentActivity() {
                 PokopiaMainScaffold(
                     viewModel = viewModel,
                     selectedTab = selectedTabIndex,
-                    openAiCameraModalInitially = openAiCameraModalOnIsland,
                     onSelectTab = { idx ->
                         openAiCameraModalOnIsland = false
                         selectedTabIndex = idx
@@ -108,7 +107,6 @@ private enum class PokopiaNavTab(
 private fun PokopiaMainScaffold(
     viewModel: PokopiaViewModel,
     selectedTab: Int,
-    openAiCameraModalInitially: Boolean,
     onSelectTab: (Int) -> Unit
 ) {
     val tabs = PokopiaNavTab.entries
@@ -145,7 +143,6 @@ private fun PokopiaMainScaffold(
             when (selectedTab) {
                 0 -> IslandSanctuaryScreen(
                     viewModel = viewModel,
-                    openAiCameraModalInitially = openAiCameraModalInitially
                 )
                 1 -> PokopiaPantryScreen(viewModel = viewModel)
                 2 -> DittosCafeScreen(viewModel = viewModel)

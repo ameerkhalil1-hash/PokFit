@@ -65,19 +65,19 @@ private val PokopiaDarkColorScheme = darkColorScheme(
 
 val PokopiaTypography = Typography(
     headlineLarge = TextStyle(
-        fontFamily = FontFamily.Rounded,
+        fontFamily = FontFamily.SansSerif,
         fontWeight = FontWeight.ExtraBold,
         fontSize = 26.sp,
         color = PokopiaColors.TextCream
     ),
     titleLarge = TextStyle(
-        fontFamily = FontFamily.Rounded,
+        fontFamily = FontFamily.SansSerif,
         fontWeight = FontWeight.Bold,
         fontSize = 20.sp,
         color = PokopiaColors.TextCream
     ),
     titleMedium = TextStyle(
-        fontFamily = FontFamily.Rounded,
+        fontFamily = FontFamily.SansSerif,
         fontWeight = FontWeight.SemiBold,
         fontSize = 16.sp,
         color = PokopiaColors.TextCream

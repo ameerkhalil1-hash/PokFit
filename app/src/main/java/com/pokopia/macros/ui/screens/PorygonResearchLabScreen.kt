@@ -147,17 +147,6 @@ fun PorygonResearchLabScreen(viewModel: PokopiaViewModel) {
                         style = MaterialTheme.typography.bodyMedium,
                         color = PokopiaColors.TextCream
                     )
-                    Row(
-                        modifier = Modifier.fillMaxWidth(),
-                        horizontalArrangement = Arrangement.SpaceBetween,
-                        verticalAlignment = Alignment.CenterVertically
-                    ) {
-                        Text(
-                            text = "New Targets: ${report.recommendedCaloriesKcal} kcal
-" +
-                                "${report.recommendedProteinG}g P • ${report.recommendedCarbsG}g C • ${report.recommendedFatG}g F",
-                            style = MaterialTheme.typography.titleMedium,
-                            color = PokopiaColors.PorygonCyberCyan
                         )
                         Button(
                             onClick = { viewModel.acceptPorygonWeeklyCheckInTargets() },
@@ -463,12 +452,12 @@ private fun ConnectedEcosystemCard(
                             Text("${workout.source} • ${workout.sportType} • ${workout.durationMinutes} min", style = MaterialTheme.typography.labelSmall)
                         }
                     }
-                    Text(
-                        "${workout.distanceKm} km | ${workout.avgHeartRateBpm} bpm
-+${workout.elevationGainM}m elev",
-                        style = MaterialTheme.typography.labelSmall,
-                        color = PokopiaColors.PorygonCyberCyan
-                    )
+                Text(
+                    text = "${workout.distanceKm} km | ${workout.avgHeartRateBpm} bpm | ${workout.elevationGainM}m elev",
+                    style = MaterialTheme.typography.labelSmall,
+                    color = PokopiaColors.PorygonCyberCyan
+                )
+
                 }
             }
 
